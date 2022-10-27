@@ -1,0 +1,24 @@
+<h2>{{ developper.firstName }} {{ developper.lastName }}</h2>
+<div>
+    <ul>
+        <li>
+            <span>Gender : </span>
+            {{ developper.gender }}
+        </li>
+        <li>
+            <span>Age : </span>
+            {{ developper.age }}
+            ans
+        </li>
+        <li>
+            <span>Bio : </span>
+            {{ developper.bio }}
+        </li>
+    </ul>
+</div>
+<h3>Favorite language : </h3>
+<app-skills *ngFor="let sk of developper.skills"
+            [skill]="sk">
+></app-skills>
+
+
